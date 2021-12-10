@@ -148,7 +148,7 @@ void WillHPF2AudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
     for (auto sample = 0; sample < buffer.getNumSamples(); ++sample)
     {
         auto* channelData = buffer.getWritePointer (channel);
-        // Input sample is x(n) float xn = pInputBuffer[0];
+        // Input sample is x(n) f
         float xn = channelData[sample];
         // READ: Delay sample is x(n-1)
         float xn_1 = z1L;
@@ -164,7 +164,7 @@ void WillHPF2AudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
     for (auto sample = 0; sample < buffer.getNumSamples(); ++sample)
     {
         auto* channelData = buffer.getWritePointer (channel);
-        // Input sample is x(n) float xn = pInputBuffer[0];
+        // Input sample is x(n) 
         float xn = channelData[sample];
         // READ: Delay sample is x(n-1)
         float xn_1 = z1R;
