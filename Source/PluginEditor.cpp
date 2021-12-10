@@ -40,8 +40,8 @@ void WillHPF2AudioProcessorEditor::paint (juce::Graphics& g)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
     g.setColour (juce::Colours::white);
-    g.setFont (30.0f);
-    g.drawFittedText ("Will Pirkle - Simple HPF 2", 0, 30, getWidth(), 5, juce::Justification::centred, 1);
+    g.setFont (19.0f);
+    g.drawFittedText ("Will Pirkle - General First-Order Feed-Forward Filter", 0, 30, getWidth(), 5, juce::Justification::centred, 1);
     g.setFont (15.0f);
     g.drawFittedText ("y(n) = a0 * x(n) + a1 * x(n-1)", 0, 60, getWidth(), 5, juce::Justification::centred, 1);
 }
